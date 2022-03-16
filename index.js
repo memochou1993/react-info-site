@@ -1,46 +1,17 @@
-function Header() {
-  return (
-    <header>
-      <nav className="nav">
-        <img src="./react-logo.svg" className="nav-logo" />
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+import React from "react"
+import ReactDOM from "react-dom"
+import Header from "./Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
 
-function MainContent() {
-  return (
-    <main>
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>It's a popular library, so I'll be able to fit in with the cool kids!</li>
-        <li>I'm more likely to get a job as a developer if I know React</li>
-      </ol>
-    </main>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <small>© 2022 Memo Chou</small>
-    </footer>
-  );
-}
-
-function MyPage() {
+function App() {
   return (
     <div>
       <Header />
       <MainContent />
       <Footer />
     </div>
-  );
+  )
 }
 
-ReactDOM.render(<MyPage />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
